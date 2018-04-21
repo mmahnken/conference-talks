@@ -1,0 +1,189 @@
+@import 'css/theme.css';
+
+.wy-side-nav-search,
+.wy-nav-top {
+    background-color: #e64f3a;
+}
+
+.wy-side-nav-search .project {
+    margin-bottom: 0.5em;
+    font-size: 80%;
+}
+
+.wy-side-nav-search .extlink {
+    margin-bottom: 0.5em;
+    font-size: 70%;
+}
+
+/* don't show title in the TOC on the sidebar; it's duplicative */
+.local-toc > ul > li > a {
+    display: none;
+}
+
+/* Indent 3rd level items in sidebar */
+.local-toc ul li ul li ul {
+    margin-left: 1em;
+}
+
+h1 {
+    background-image: url('hb-logo.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1em 1em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+.red { color: #c00; font-weight: bold; }
+
+.blue {
+    color: #28c;
+    font-weight: bold;
+}
+
+
+.orange {
+    color: #f80;
+    font-weight: bold;
+}
+
+.inv-red { background-color: #c00; color: #fff; font-weight: bold; }
+.green { color: #0c0; font-weight: bold; }
+.tan { color: #daa520; font-weight: bold; }
+.cyan { color: #0cc; font-weight: bold; }
+.gone { color: #666; text-decoration: line-through; }
+
+pre.literal-block.console {
+    background-color: #333;
+    color: #ddd;
+    padding: 1em;
+    border-radius: 0.4em;
+    margin: 1.5em 0;
+    max-width: 45em;
+
+font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+font-size: 12px;
+line-height: 1.5;
+
+}
+
+/* command-lne switches */
+kbd { 
+
+font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+
+}
+
+.console .cmd {
+    font-weight: bold;
+    color: yellow;
+}
+
+.console a { color: inherit !important; }
+
+/* Make these darker than usual so they show up better */
+
+.console .red { color: #f33; }
+.console .blue {
+    color: #4af;
+}
+
+.console .orange {
+    color: #fc3;
+}
+.console .green { color: #3f3; }
+.console .tan { color: #daa520; }
+.console .cyan { color: #0ff; }
+.console .gone { color: #666; text-decoration: line-through; }
+
+.left { text-align: left; }
+
+ul.simple > li {
+    margin-bottom: 0.4em;
+}
+
+ul.simple > li > ul {
+    margin-top: 0.4em;
+    /*font-size: 90%;*/
+}
+
+dd {
+    margin-bottom: 0.5em !important;
+}
+
+
+cite {
+    font-style: italic !important;
+    font-weight: bold;
+}
+
+
+.compare > div {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.hover-reveal:before {
+    content: "Hover to reveal";
+}
+
+.hover-reveal:hover:before {
+    content: "\00a0";
+}
+
+.hover-reveal > * {
+    visibility: hidden;
+}
+
+.hover-reveal {
+    border: dashed 1px #999;
+    background-color: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.hover-reveal:hover > * {
+    visibility: visible;
+}
+
+.hover-reveal:hover {
+    background-color: transparent;
+}
+
+@media print {
+    .hover-reveal > * {
+        visibility: visible;;
+    }
+
+    .hover-reveal:before {
+        content: "";
+    }
+
+    .hover-reveal {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .noprint {
+        display: none !important;
+    }
+
+    .simple {
+        page-break-inside: avoid;
+    }
+
+    .console {
+        background-color: #F5F5F5 !important;
+        color: #8C8C8C !important;
+    }
+
+    .console .cmd {
+        color: black;
+    }
+}

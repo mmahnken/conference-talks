@@ -1,0 +1,12 @@
+@import url("revealjs-sphinx.css");
+
+.reveal, .reveal h1, .reveal h2, .reveal h3 { font-family: 'Quicksand', sans-serif; }
+
+#slide-footer {
+    height: 11vw;
+    background-size: 16vw;
+    background-image: url("footer-logo.jpg");
+    background-repeat: no-repeat;
+    width: 400px;
+    position: absolute;
+}

@@ -1,0 +1,10 @@
+@import url("revealjs-sphinx.css");
+
+#slide-footer {
+    height: 7vw;
+    background-size: 21vw 7vw;
+    background-image: url("footer-logo.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    position: absolute;
+}

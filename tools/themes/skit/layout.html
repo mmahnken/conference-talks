@@ -1,0 +1,19 @@
+{# Overall page structure for RevealJS theme: single HTML page for each section #}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700,400italic,600italic,700italic|Inconsolata:400,700'
+          rel='stylesheet'>
+</head>
+<body>
+<div id="body">
+        {%- block document %}
+        {% block body %} {% endblock %}
+        {%- endblock %}
+</body>
+</html>
